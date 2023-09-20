@@ -15,7 +15,7 @@ npm install
 ## 3. HOW TO RUN THE PROJECT
 npm start
 
-## 4. HOW TO USE IN BROWSER
+## 4. HOW TO USE (GET REQUESTS in POSTMAN or PASTE IN BROWSER)
 
 ### 1. FOR CURRENCIES
 - http://localhost:8081/
