@@ -2,10 +2,10 @@
 Working with NodeJs, Express
 
 ## 1. KEY TOPICS
-- Express Routes
-- Validating Routes
-- Using Joi
-- Storing Server Secrets with environment variables
+- Middleware
+- Globally & Selectively Applying Middleware
+- Storing data in MongoDB
+- Using Mongoose ODM
 
 ## 2. HOW TO INSTALL THE PROJECT
 npm install
@@ -18,8 +18,10 @@ Create a .env file in the root folder with the following content
 ROUTE_PASSWORD=LetMeIn
 
 ## 5. HOW TO USE (GET REQUESTS in POSTMAN or PASTE IN BROWSER)
+After cloning the app, create a .env file in the root folder with the following content
+ROUTE_PASSWORD=LetMeIn
 
-### 1. FOR CURRENCIES (Also check 5 below)
+### 1. FOR CURRENCIES
 - http://localhost:8081/
 - http://localhost:8081/currencies
 - http://localhost:8081/currencies/INR
@@ -32,15 +34,15 @@ ROUTE_PASSWORD=LetMeIn
 - http://localhost:8081/users/search?age=50
 - http://localhost:8081/users/search?gender=female&age=50
 
-## 6. TEST '/currencies' ROUTE IN POSTMAN
-To test your protected /currencies route with Postman, you can follow these steps:
+## 6. TEST THE APP
+To test the protected app with Postman, you can follow these steps:
 
 - Start your Express server if it's not already running.
 - Open Postman.
 - Create a new request:
     - Click on the "New" button in the upper-left corner.
     - Choose a request type (e.g., GET).
-    - Enter the URL for your /currencies route (e.g., http://localhost:8081/currencies).
+    - Enter the URL for your the route (e.g., http://localhost:8081/currencies).
     - Set the Authorization Header:
     - Click on the "Headers" tab.
     - Add a header with the key "Authorization" and the value "Bearer YourPasswordHere". Replace "YourPasswordHere" with the actual password you've set in your environment variable (from your .env file).
